@@ -1,4 +1,8 @@
+<!DOCTYPE html>
 <html>
+<head>
+<title>Exempel 1a</title>
+</head>
 <body>
 
 <h1>Hej!</h1>
