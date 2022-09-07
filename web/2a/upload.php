@@ -1,11 +1,7 @@
 <?php
-/*$target_dir = "/";
-$target_file = $target_dir . basename($_FILES['uploaded_file']['name']);
-*/
-
-
 if(isset($_POST['submit'])) {
     if($_FILES['uploaded_file']['size'] > 700000) {
+        /*Assuming 700kB limit was intended, brief actually specified 700kb*/
         echo "The file is too large!";
     } else {
         $type_of_file = exif_imagetype($_FILES['uploaded_file']['tmp_name']);
