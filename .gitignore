@@ -6,7 +6,7 @@ build_tmp/
 .DS_Store
 **/.DS_Store
 .vscode/
-
+uploads/
 # npm packages should never ever be included in git
 /node_modules
 
