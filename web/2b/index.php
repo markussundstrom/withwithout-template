@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Exempel 2a</title>
+<title>Exempel 2b</title>
 </head>
 <body>
 
