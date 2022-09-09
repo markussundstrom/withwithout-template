@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Exempel 1b resultat</title>
+<title>Exempel 1c resultat</title>
 </head>
 <body>
 <?php
@@ -28,7 +28,7 @@ if (isset($_POST['submit'])) {
         echo "Telefon: " . $phone . "<br>";
     }
     if ($info_ok) {
-        $line = date("Y-m-d H:i:s") . "," . $name . "," . $email . "," . $phone . "\n";
+        $line = date("Y-m-d H:i:s") . "\t" . $name . "\t" . $email . "\t" . $phone . "\n";
         $logfile = fopen("logfile.txt", "a") or die ("Unable to open file");
         fwrite($logfile, $line);
         fclose($logfile);
