@@ -7,10 +7,11 @@
 <?php
 $logfile = fopen("logfile.txt", "r");
 $lines = array();
-while(!feof($logfile)) {
-    array_push($lines, fgets($logfile));
+while($nextline = fgets($logfile)) {
+    array_push($lines, $nextline);
 }
 $entries = array();
+fclose($logfile);
 foreach ($lines as $line) {
     array_push($entries, explode("\t", $line));
 }
